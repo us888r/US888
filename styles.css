@@ -1,0 +1,46 @@
+:root{
+  --blue:#0b5cff; --bg:#0b1220; --card:#101b33; --text:#e8efff;
+  --muted:#9fb3ff; --accent:#66d9ff; --danger:#ff5577; --success:#33e29a;
+}
+*{box-sizing:border-box} html,body{height:100%}
+body{
+  margin:0;font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial;
+  color:var(--text);background:linear-gradient(180deg,#06102a,#0b1220 40%);
+}
+.nav{
+  display:flex;align-items:center;justify-content:space-between;padding:12px 16px;
+  background:#0b1a3a;border-bottom:1px solid #1d2c55;position:sticky;top:0;z-index:10
+}
+.brand{font-weight:800}
+.brand .tag{margin-left:8px;padding:2px 8px;border:1px dashed var(--accent);
+  border-radius:999px;color:var(--accent);font-size:12px}
+.links button{
+  background:transparent;border:1px solid transparent;color:var(--muted);
+  padding:8px 10px;border-radius:10px;margin:0 4px;cursor:pointer
+}
+.links button:hover{border-color:#2549ff;color:#fff;background:rgba(37,73,255,.08)}
+.auth{display:flex;align-items:center;gap:8px}
+.auth #balance{font-weight:700;color:var(--success);margin-right:6px}
+.auth button{background:var(--blue);border:none;color:#fff;padding:8px 12px;border-radius:10px;cursor:pointer}
+.auth .danger{background:transparent;border:1px solid #334;color:#ccc}
+main#app{max-width:980px;margin:24px auto;padding:0 16px}
+.card{
+  background:var(--card);border:1px solid #203058;border-radius:16px;padding:16px;
+  box-shadow:0 8px 24px rgba(2,10,33,.25);margin-bottom:16px
+}
+.h{font-size:22px;font-weight:800;margin:4px 0 12px}
+.sub{color:var(--muted);font-size:14px;margin-top:-4px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.btn{background:var(--blue);color:#fff;border:none;padding:10px 12px;border-radius:12px;cursor:pointer;font-weight:700}
+.btn.secondary{background:#233462}
+.btn.ghost{background:transparent;border:1px solid #2f477a}
+.input{width:100%;padding:10px 12px;border-radius:12px;border:1px solid #223660;background:#0b1530;color:#dfe7ff}
+.row{display:flex;gap:10px;flex-wrap:wrap}
+.label{font-size:12px;color:#9bb0ff;margin-bottom:6px}
+.small{font-size:12px;color:#9bb0ff}
+.table{width:100%;border-collapse:collapse}
+.table th,.table td{padding:10px;border-bottom:1px solid #21345f}
+.table th{color:#9bb0ff;text-align:left}
+.center{text-align:center}
+.notice{background:#0c1c3c;border-left:4px solid var(--accent);padding:12px;border-radius:10px}
+.foot{padding:20px 16px;color:#84a0ff66;text-align:center;border-top:1px solid #1d2c55;margin-top:24px}
